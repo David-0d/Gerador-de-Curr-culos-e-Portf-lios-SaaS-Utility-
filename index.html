@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Resume | Construtor Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="workspace">
+        <aside class="sidebar-editor">
+            <h2>Configurar Currículo</h2>
+            <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" id="input-name" placeholder="Ex: Alex Morgan">
+            </div>
+            <div class="form-group">
+                <label>Cargo / Especialidade</label>
+                <input type="text" id="input-role" placeholder="Ex: Fullstack Engineer">
+            </div>
+            <button class="btn-primary" onclick="gerarPDF()">Baixar PDF</button>
+        </aside>
+
+        <section class="preview-pane">
+            <div class="resume-paper" id="resume-preview">
+                <h1 id="preview-name">Seu Nome</h1>
+                <p id="preview-role" class="role-text">Sua Especialidade</p>
+                <hr class="divider">
+                <div class="section-block">
+                    <h3>Resumo Profissional</h3>
+                    <p class="placeholder-text">Preencha os campos ao lado para visualizar seu currículo formatado em tempo real com padrão minimalista.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
